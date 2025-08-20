@@ -1,0 +1,27 @@
+# Core Data Processing
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Machine Learning & NLP
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+# Note: Use faiss-gpu>=1.7.4 instead if you have GPU support
+
+# Web Application
+streamlit>=1.28.0
+plotly>=5.0.0
+
+# API Integration
+requests>=2.28.0
+
+# Data Generation (for anonymization/sample data)
+faker>=19.0.0
+
+# Optional: Enhanced text processing
+# scikit-learn>=1.1.0  # For TF-IDF clustering alternative
+# nltk>=3.8  # For advanced text preprocessing
+
+# Development/Testing (optional)
+# pytest>=7.0.0
+# black>=22.0.0  # Code formatting
+# flake8>=5.0.0  # Linting
