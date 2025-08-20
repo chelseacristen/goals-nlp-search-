@@ -1,4 +1,4 @@
-Goals Natural Language Search
+# Goals Natural Language Search # 
 A natural language search engine for goals and milestones data, combining semantic search with keyword matching and AI-powered analysis.
 Features
 
@@ -8,23 +8,28 @@ Features
 📊 Status-Aware: Understands health status and project state queries
 🎯 Interactive Web UI: Streamlit-based interface for easy querying
 
-Quick Start
+## Quick Start ##
 1. Installation
 bashgit clone https://github.com/yourusername/goals-nlp-search.git
 cd goals-nlp-search
 pip install -r requirements.txt
+
 2. Prepare Your Data
 bash# Place your Cascade export in data/sample_goals.csv
 python scripts/1_data_preparation.py
+
 3. Build Search Index
 bashpython scripts/2_build_search_index.py
-4. Run the Application
+
+5. Run the Application
 bashstreamlit run scripts/4_streamlit_app.py
-5. Test Search Engine (Optional)
+
+6. Test Search Engine (Optional)
 bashpython scripts/3_search_engine.py
 Data Format
 Input CSV Structure
-Your goals CSV should include these columns:
+
+## Your goals CSV should include these columns: ##
 
 goal_title: Title of the goal
 goal_description: Detailed description
@@ -43,7 +48,7 @@ milestone_health: Status
 milestone_end_date: Due date
 milestone_last_update: Latest update
 
-Configuration
+## Configuration ##
 API Keys
 Create a Streamlit secrets file or environment variables:
 toml# .streamlit/secrets.toml
@@ -55,42 +60,42 @@ Search result thresholds
 Hybrid scoring weights
 Model selection
 
-Example Queries
+## Example Queries ##
 Status & Analysis
 
 "What goals are behind schedule?"
 "Which milestones are at risk?"
 "Show me delayed engineering projects"
 
-People & Workload
+*People & Workload*
 
 "What is Sarah working on?"
 "Who owns the most at-risk projects?"
 "Show me John's Q4 priorities"
 
-Insights & Patterns
+*Insights & Patterns*
 
 "What patterns do you see in our delays?"
 "Which departments need help?"
 "Summarize our goal progress"
 
-Technical Architecture
+## Technical Architecture ##
 Search Pipeline
 
-Query Processing: Parse natural language input
-Semantic Search: Generate embeddings and search FAISS index
-Keyword Matching: Score based on exact keyword matches
-Hybrid Scoring: Combine semantic + keyword scores
-AI Analysis: Use RAG to generate insights (optional)
+## Query Processing:##  Parse natural language input
+## Semantic Search:## Generate embeddings and search FAISS index
+## Keyword Matching:## Score based on exact keyword matches
+## Hybrid Scoring:## Combine semantic + keyword scores
+## AI Analysis:## Use RAG to generate insights (optional)
 
-Key Components
+## Key Components##
 
-FAISS Index: Fast semantic similarity search
-SentenceTransformers: Text embedding generation
-Hybrid Scoring: Balances semantic + keyword relevance
-RAG Integration: LLM-powered analysis and insights
+## FAISS Index:## Fast semantic similarity search
+## SentenceTransformers:## Text embedding generation
+## Hybrid Scoring:## Balances semantic + keyword relevance
+## RAG Integration:## LLM-powered analysis and insights
 
-Dependencies
+## Dependencies##
 Core Requirements
 streamlit>=1.28.0
 sentence-transformers>=2.2.0
@@ -100,7 +105,8 @@ numpy>=1.21.0
 requests>=2.28.0
 Optional (for data generation)
 faker>=19.0.0
-Troubleshooting
+
+## Troubleshooting ##
 Common Issues
 
 "Search components not found": Run the build_index.py script first
