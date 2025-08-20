@@ -79,7 +79,7 @@ Status & Analysis
 "Which departments need help?"
 "Summarize our goal progress"
 
-## Technical Architecture ##
+# Technical Architecture #
 
 ## Search Pipeline ##
 
