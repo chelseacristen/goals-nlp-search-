@@ -80,20 +80,21 @@ Status & Analysis
 "Summarize our goal progress"
 
 ## Technical Architecture ##
-Search Pipeline
 
-## Query Processing:##  Parse natural language input
-## Semantic Search:## Generate embeddings and search FAISS index
-## Keyword Matching:## Score based on exact keyword matches
-## Hybrid Scoring:## Combine semantic + keyword scores
-## AI Analysis:## Use RAG to generate insights (optional)
+## Search Pipeline ##
+
+*Query Processing:*  Parse natural language input
+*Semantic Search:* Generate embeddings and search FAISS index
+*Keyword Matching:* Score based on exact keyword matches
+*Hybrid Scoring:* Combine semantic + keyword scores
+*AI Analysis:* Use RAG to generate insights (optional)
 
 ## Key Components##
 
-## FAISS Index:## Fast semantic similarity search
-## SentenceTransformers:## Text embedding generation
-## Hybrid Scoring:## Balances semantic + keyword relevance
-## RAG Integration:## LLM-powered analysis and insights
+*FAISS Index:* Fast semantic similarity search
+*SentenceTransformers:* Text embedding generation
+*Hybrid Scoring:* Balances semantic + keyword relevance
+*RAG Integration:* LLM-powered analysis and insights
 
 ## Dependencies##
 Core Requirements
@@ -113,21 +114,13 @@ Common Issues
 "No results found": Try rephrasing your query or check data quality
 "AI service unavailable": Check your Groq API key configuration
 
-Performance Tips
+## Performance Tips ##
 
 Index builds are one-time operations (cache results)
 Larger k values in search may improve recall but slow performance
 Adjust scoring thresholds based on your data characteristics
 
-Contributing
-
-Fork the repository
-Create a feature branch
-Add tests for new functionality
-Submit a pull request
-
-
-File Structure
+## File Structure ##
 goals-nlp-search/
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
