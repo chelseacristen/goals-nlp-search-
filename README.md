@@ -89,14 +89,14 @@ Status & Analysis
 *Hybrid Scoring:* Combine semantic + keyword scores
 *AI Analysis:* Use RAG to generate insights (optional)
 
-## Key Components##
+## Key Components ##
 
 *FAISS Index:* Fast semantic similarity search
 *SentenceTransformers:* Text embedding generation
 *Hybrid Scoring:* Balances semantic + keyword relevance
 *RAG Integration:* LLM-powered analysis and insights
 
-## Dependencies##
+## Dependencies ##
 Core Requirements
 streamlit>=1.28.0
 sentence-transformers>=2.2.0
@@ -119,23 +119,3 @@ Common Issues
 Index builds are one-time operations (cache results)
 Larger k values in search may improve recall but slow performance
 Adjust scoring thresholds based on your data characteristics
-
-## File Structure ##
-goals-nlp-search/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── data/                       
-│   ├── sample_goals.csv        # Sample/anonymized data
-│   └── README.md               # Data documentation
-├── scripts/                    
-│   ├── 1_data_preparation.py   # Clean and structure data
-│   ├── 2_build_search_index.py # Create FAISS index
-│   ├── 3_search_engine.py      # Test search functionality
-│   └── 4_streamlit_app.py      # Web application
-├── src/                        
-│   ├── __init__.py            
-│   ├── keyword_scoring.py      # Keyword matching logic
-│   ├── semantic_search.py      # FAISS operations
-│   └── llm_integration.py      # RAG and LLM calls
-└── config/
-    └── config.py               # Configuration settings
